@@ -11,13 +11,12 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
-    "eject": "SKIP_PREFLIGHT_CHECK=true react-scripts eject",
+    "build": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "lint": "eslint --fix src",
     "precommit": "npm run lint",
     "prepush": "npm run build",
-    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
-    "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test"
+    "start": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "test": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "eslint": "^7.4.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
