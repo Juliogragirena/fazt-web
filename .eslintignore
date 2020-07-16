@@ -1,0 +1,7 @@
+/node_modules/
+serviceWorker.js
+
+*.test.js
+
+*.ttf
+*.woff
