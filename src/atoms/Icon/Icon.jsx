@@ -2,12 +2,10 @@
 
 import React from 'react';
 
-function Icon() {
-  return (
-    <div>
-      Icon
-    </div>
-  );
-}
-
-export default Icon;
+export const Icon = ({ src, icon, form,type,size }) => {
+  if (!icon) {
+    return <img className={'icon ' + form} src={src} alt="icon" />;
+  } else {
+    return <i className={type+' '+icon+' '+size+' '+ form +'icon '} />;
+  }
+};
