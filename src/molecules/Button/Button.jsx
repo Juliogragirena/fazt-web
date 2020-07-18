@@ -1,8 +1,7 @@
 // Copyright 2020 Fazt Community ~ All rights reserved. MIT license.
 
 import React from 'react';
-import './Btn.scss';
-// import { Icon } from '../Icon/Icon.jsx';
+import './Button.scss';
 
 export const BtnPrimary = ({ text }) => {
   return (
@@ -15,17 +14,6 @@ export const BtnPrimary = ({ text }) => {
 export const BtnOutlinePrimary = ({ text }) => {
   return (
     <div className="btnOutlinePrimary">
-      <span>{text}</span>
-    </div>
-  );
-};
-
-
-// TODO: Waiting for Icon components merge
-export const BtnOutlinePrimaryIcon = ({ text, icon, form, src }) => {
-  return (
-    <div className="btnOutlinePrimary">
-      {/* {(icon || src) && <Icon type={type} icon={icon} size={size} form={form} src={src} />} */}
       <span>{text}</span>
     </div>
   );
