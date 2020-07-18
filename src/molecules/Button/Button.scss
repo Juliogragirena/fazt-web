@@ -2,13 +2,13 @@
 @import '@assets/scss/variables';
 
 .btnPrimary {
-    box-sizing: border-box;
+  box-sizing: border-box;
   background-color: $primary-color;
   border-radius: 8px;
   border: 2px solid $primary-color;
   width: fit-content;
   height: fit-content;
-  padding: .6rem 1.4rem;
+  padding: 0.6rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
   -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.3);
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 
   > span {
@@ -29,7 +29,14 @@
   &:hover {
     background-color: $pink-color;
     border: 2px solid $pink-color;
-    transition: background-color .3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .icon {
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+  .icon--circule {
+    border-radius: 50%;
   }
 }
 
@@ -40,7 +47,7 @@
   border: 2px solid $primary-color;
   width: fit-content;
   height: fit-content;
-  padding: .6rem 1.4rem;
+  padding: 0.6rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +55,7 @@
   -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.3);
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 
   > span {
@@ -61,19 +68,16 @@
   &:hover {
     border: 2px solid $pink-color;
     background-color: $pink-color;
-    transition: border .3s ease-in-out;
-    transition: background-color .3s ease-in-out;
-        >span {
-            color: $textprimary-color;
-            transition: color .3s ease-in-out;
-        }
+    transition: border 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    > span {
+      color: $textprimary-color;
+      transition: color 0.3s ease-in-out;
+    }
   }
   .icon {
     margin-right: 5px;
-    height: 2rem;
-    width: 2rem;
     border-radius: 5px;
-    margin-left: 30px;
   }
   .icon--circule {
     border-radius: 50%;
