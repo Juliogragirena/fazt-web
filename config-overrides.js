@@ -5,6 +5,10 @@ const { resolve } = require('path');
 
 module.exports = override(
   addWebpackAlias({
-    ['@assets']: resolve(__dirname, './src/assets')
+    ['@assets']: resolve(__dirname, './src/assets'),
+    ['@atoms']: resolve(__dirname, './src/atoms'),
+    ['@molecules']: resolve(__dirname, './src/molecules'),
+    ['@organism']: resolve(__dirname, './src/organism'),
+    ['@templates']: resolve(__dirname, './src/templates')
   })
 );

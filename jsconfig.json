@@ -4,6 +4,18 @@
     "paths": {
       "@assets/*": [
         "assets/*"
+      ],
+      "@atoms/*": [
+        "atoms/*"
+      ],
+      "@molecules/*": [
+        "molecules/*"
+      ],
+      "@organism/*": [
+        "organism/*"
+      ],
+      "@templates/*": [
+        "templates/*"
       ]
     }
   }
