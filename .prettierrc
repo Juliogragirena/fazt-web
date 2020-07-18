@@ -6,6 +6,6 @@
   "tabWidth": 2,
   "printWidth": 110,
   "bracketSpacing": true,
-  "endOfLine": "crlf",
+  "endOfLine": "auto",
   "trailingComma": "none"
 }

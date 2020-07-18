@@ -12,11 +12,12 @@
   },
   "scripts": {
     "build": "cross-env SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
-    "lint": "eslint --fix src",
-    "precommit": "npm run lint",
+    "precommit": "npm run lint:fix",
     "prepush": "npm run build",
     "start": "cross-env SKIP_PREFLIGHT_CHECK=true react-app-rewired start",
-    "test": "cross-env SKIP_PREFLIGHT_CHECK=true react-app-rewired test"
+    "test": "cross-env SKIP_PREFLIGHT_CHECK=true react-app-rewired test",
+    "lint": "eslint ./src/**/*.{js,jsx}",
+	  "lint:fix": "eslint --fix --ext .js,.jsx ." 
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,8 +39,10 @@
     "customize-cra": "^1.0.0",
     "eslint": "^7.4.0",
     "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "husky": "^4.2.5",
