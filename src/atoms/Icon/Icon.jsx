@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-export const Icon = ({ src, icon, form,type,size }) => {
+export default ({ src, icon, form, type, size }) => {
   if (!icon) {
-    return <img className={'icon ' + form} src={src} alt="icon" />;
+    return <img className={`icon ${form}`} src={src} alt="icon" />;
   } else {
-    return <i className={type+' '+icon+' '+size+' '+ form +'icon '} />;
+    return <i className={`${type} ${icon} ${size} ${form} icon `} />;
   }
 };
