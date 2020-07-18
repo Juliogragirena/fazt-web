@@ -1,24 +1,18 @@
 # Icon atom
-icon element to which you can return an image or a font awesome icon
+Icon element to which you can return an image or a font awesome icon
 ## Props
-src icon form type size
-#### 1. type
-this prop receives the type of icon to show
-+ fas 
-+ far
-+ fal
-+ fad
-+ fab
-#### 2. icon
-this prop is named after the icon to display for example
-+ fa-camera
-+ fa-home
-+ fa-dog
-to see more names and icons go to [font awosome galery](https://fontawesome.com/icons?d=gallery)
-### 3. src 
-this prop receives the path of the image to display
-### 4. size 
-this prop receives the size of the icon 
+[src](#2-src) [name](#1-name) [classes](#4-classes) [size](#3-size)
+#### 1. name
+This prop is named after the icon to display for example
++ camera
++ home
++ dog
+  
+To see more names and icons go to [font awesome galery](https://fontawesome.com/icons?d=gallery)
+#### 2. src 
+This prop receives the path of the image to display
+#### 3. size 
+This prop receives the size of the icon 
    | Class  |  Size  |
    | :----: | :----: |
    | fa-xs  | .75em  |
@@ -33,5 +27,5 @@ this prop receives the size of the icon
    | fa-8x  |  8em   |
    | fa-9x  |  9em   |
    | fa-10x |  10em  |
-### 5. classes
-this prop receives a class which you want to add to the icon to facilitate its modification
+#### 4. classes
+This prop receives a class which you want to add to the icon to facilitate its modification
