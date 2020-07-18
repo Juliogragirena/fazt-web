@@ -1,6 +1,6 @@
 // Copyright 2020 Fazt Community ~ All rights reserved. MIT license.
 
-import Button from './Button';
-import './Button.scss';
+import Btn from './Btn';
+import './Btn.scss';
 
-export default Button;
+export default Btn;

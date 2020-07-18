@@ -17,7 +17,7 @@
     "start": "cross-env SKIP_PREFLIGHT_CHECK=true react-app-rewired start",
     "test": "cross-env SKIP_PREFLIGHT_CHECK=true react-app-rewired test",
     "lint": "eslint ./src/**/*.{js,jsx}",
-	  "lint:fix": "eslint --fix --ext .js,.jsx ." 
+    "lint:fix": "eslint --fix --ext .js,.jsx ."
   },
   "eslintConfig": {
     "extends": "react-app"
