@@ -2,8 +2,10 @@
 
 import React from 'react';
 
-function Icon() {
-  return <div>Icon</div>;
-}
-
-export default Icon;
+export default ({ src, name, classes = '', size = '' }) => {
+  if (!name) {
+    return <img className={`icon ${classes}`} src={src} alt="icon" />;
+  } else {
+    return <i className={`fas fa-${name} ${size} ${classes} icon `} />;
+  }
+};
