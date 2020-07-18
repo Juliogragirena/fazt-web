@@ -4,7 +4,7 @@ import React from 'react';
 import './Button.scss';
 import Icon from 'atoms/Icon/Icon';
 
-export const BtnPrimary = ({ text, src, name, classes, size }) => {
+export const ButtonPrimary = ({ text, src, name, classes, size }) => {
   return (
     <div className="btnPrimary ">
       {(name || src) && <Icon src={src} name={name} size={size} classes={classes} />}
@@ -13,7 +13,7 @@ export const BtnPrimary = ({ text, src, name, classes, size }) => {
   );
 };
 
-export const BtnOutlinePrimary = ({ text, src, name, classes, size }) => {
+export const ButtonOutlinePrimary = ({ text, src, name, classes, size }) => {
   return (
     <div className="btnOutlinePrimary ">
       {(name || src) && <Icon src={src} name={name} size={size} classes={classes} />}
