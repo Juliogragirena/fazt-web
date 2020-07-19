@@ -14,5 +14,6 @@
 * **Frayni** [GitHub](https://github.com/frayni)
 * **Adranuz** [GitHub](https://github.com/adranuz)
 * **Aimarandony** [GitHub](https://github.com/nicksiuxs)
+* **ZeR0ByTe** [GitHub](https://github.com/soydiego)
 
 ## [License](./LICENSE)
