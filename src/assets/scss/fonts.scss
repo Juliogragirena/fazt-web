@@ -1,14 +1,14 @@
 // Copyright 2020 Fazt Community ~ All rights reserved. MIT license.
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto/Roboto-Thin.ttf');
+  font-family: 'RobotoThin';
+  src: local('RobotoThin'), url('../fonts/Roboto/Roboto-Thin.ttf');
   font-weight: 100;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto/Roboto-Light.ttf');
+  font-family: 'RobotoLight';
+  src: local('RobotoLight'), url('../fonts/Roboto/Roboto-Light.ttf');
   font-weight: 300;
 }
 
@@ -19,42 +19,42 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+  font-family: 'RobotoMedium';
+  src: local('RobotoMedium'), url('../fonts/Roboto/Roboto-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto/Roboto-Bold.ttf');
+  font-family: 'RobotoBold';
+  src: local('RobotoBold'), url('../fonts/Roboto/Roboto-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto/Roboto-Black.ttf');
+  font-family: 'RobotoBlack';
+  src: local('RobotoBlack'), url('../fonts/Roboto/Roboto-Black.ttf');
   font-weight: 900;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans/OpenSans-Light.ttf');
+  font-family: 'OpenSansLight';
+  src: local('OpenSansLight'), url('../fonts/OpenSans/OpenSans-Light.ttf');
   font-weight: 300;
 }
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+  font-family: 'OpenSansRegular';
+  src: local('OpenSansRegular'), url('../fonts/OpenSans/OpenSans-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans/OpenSans-SemiBold.ttf');
+  font-family: 'OpenSansSemiBold';
+  src: local('OpenSansSemiBold'), url('../fonts/OpenSans/OpenSans-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
+  font-family: 'OpenSansBold';
+  src: local('OpenSansBold'), url('../fonts/OpenSans/OpenSans-Bold.ttf');
   font-weight: 700;
 }
