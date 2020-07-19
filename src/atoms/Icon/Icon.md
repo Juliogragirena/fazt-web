@@ -1,31 +1,165 @@
 # Icon atom
-Icon element to which you can return an image or a font awesome icon
+
+Icon element that can be returned by an SVG
+to used in
+[Web Design](#Icons-Web)
+and
+[Cards Icons](#Icons-Cards)
+
 ## Props
-[src](#2-src) [name](#1-name) [classes](#4-classes) [size](#3-size)
-#### 1. name
-This prop is named after the icon to display for example
-+ camera
-+ home
-+ dog
-  
-To see more names and icons go to [font awesome galery](https://fontawesome.com/icons?d=gallery)
-#### 2. src 
-This prop receives the path of the image to display
-#### 3. size 
-This prop receives the size of the icon 
-   | Class  |  Size  |
-   | :----: | :----: |
-   | fa-xs  | .75em  |
-   | fa-sm  | .875em |
-   | fa-lg  | 1.33em |
-   | fa-2x  |  2em   |
-   | fa-3x  |  3em   |
-   | fa-4x  |  4em   |
-   | fa-5x  |  5em   |
-   | fa-6x  |  6em   |
-   | fa-7x  |  7em   |
-   | fa-8x  |  8em   |
-   | fa-9x  |  9em   |
-   | fa-10x |  10em  |
-#### 4. classes
-This prop receives a class which you want to add to the icon to facilitate its modification
+
+1. name
+2. height
+3. width
+4. theme ( _Not Implemented Yet_ )
+
+## Types
+
+This prop receives the size of the icon
+| Props | Type | Default |
+| :----: | :----: | :----: |
+| name | _String_ | none |
+| height | _String_ | none |
+| width | _String_ | none |
+| theme | _String_ | "normal" |
+
+### Example
+
+```jsx
+import { IconWeb, IconCode } from '../../atoms/Icon/index';
+
+function () {
+  return (
+    <>
+      <IconWeb name="git" height="50px" width="50px" theme="light" />
+      <IconCode name="react" height="50px" width="50px" theme="dark" />
+      <IconCode name="react" height="50px" width="50px" theme="normal" />
+    </>
+  );
+}
+
+
+```
+
+## Icons Web
+
+- arrow
+- close
+- config
+- facebook
+- faztlogo
+- git
+- github
+- gitlab
+- google
+- heart
+- instagram
+- link
+- linkedin
+- twitter
+
+## Icons Cards
+
+* amazonwebservices
+* angularjs
+* apache
+* appcelerator
+* atom
+* babel
+* backbonejs
+* behance
+* bitbucket
+* bootstrap
+* bower
+* c
+* cakephp
+* ceylon
+* clojure
+* clojurescript
+* codeigniter
+* coffeescript
+* confluence
+* couchdb
+* cplusplus
+* csharp
+* css3
+* cucumber
+* d3js
+* django
+* docker
+* doctrine
+* dotnet
+* drupal
+* electron
+* elm
+* ember
+* erlang
+* express
+* foundation
+* gatling
+* gimp
+* go
+* gradle
+* grails
+* groovy
+* grunt
+* gulp
+* handlebars
+* heroku
+* html5
+* illustrator
+* inkscape
+* intellij
+* ionic
+* jasmine
+* java
+* javascript
+* jeet
+* jetbrains
+* jquery
+* krakenjs
+* laravel
+* less
+* meteor
+* mongodb
+* moodle
+* mysql
+* nginx
+* nodejs
+* nodewebkit
+* notfound
+* npm
+* oracle
+* photoshop
+* php
+* phpstorm
+* postgresql
+* protractor
+* pycharm
+* python
+* rails
+* react
+* redis
+* redux
+* ruby
+* rubymine
+* rust
+* sass
+* scala
+* sequelize
+* sketch
+* slack
+* ssh
+* stylus
+* swift
+* symfony
+* tomcat
+* travis
+* typescript
+* vagrant
+* vim
+* vuejs
+* webpack
+* yarn
+* yii
+* zend
