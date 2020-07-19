@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Button.scss';
-import {IconWeb} from 'atoms/Icon/Icon';
+import { IconWeb } from 'atoms/Icon';
 
 export const Button = ({ text, type, src, name, classes, size }) => {
   return (
