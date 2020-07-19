@@ -15,6 +15,7 @@ import { ReactComponent as Instagram } from '@assets/images/icons/web/instagram.
 import { ReactComponent as Link } from '@assets/images/icons/web/link.svg';
 import { ReactComponent as Linkedin } from '@assets/images/icons/web/linkedin.svg';
 import { ReactComponent as Twitter } from '@assets/images/icons/web/twitter.svg';
+import { ReactComponent as Discord } from '@assets/images/icons/web/discord.svg';
 
 import { ReactComponent as amazonwebservices } from '@assets/images/icons/code/amazonwebservices.svg';
 import { ReactComponent as angularjs } from '@assets/images/icons/code/angularjs.svg';
@@ -134,7 +135,8 @@ function IconWeb({ name, height, width }) {
     { name: 'instagram', icon: Instagram },
     { name: 'link', icon: Link },
     { name: 'linkedin', icon: Linkedin },
-    { name: 'twitter', icon: Twitter }
+    { name: 'twitter', icon: Twitter },
+    { name: 'discord', icon: Discord }
   ];
 
   const findIcon = IconList.find((e) => e.name === name);
