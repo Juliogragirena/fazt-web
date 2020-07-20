@@ -4,9 +4,16 @@ import React from 'react';
 import Parallax from '@organism/Parallax';
 function Main() {
   return (
-    <div>
+    <>
       <Parallax />
-    </div>
+      <div className="pruebaContainer">
+        <div className="prueba"></div>
+        <div className="prueba"></div>
+        <div className="prueba"></div>
+        <div className="prueba"></div>
+        <div className="prueba"></div>
+      </div>
+    </>
   );
 }
 
