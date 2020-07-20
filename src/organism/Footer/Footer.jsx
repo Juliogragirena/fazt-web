@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { IconWeb } from '@atoms/Icon';
+import { Link } from 'react-router-dom';
 
 export default () => {
   return (
@@ -9,18 +10,18 @@ export default () => {
       <div className="footer__links">
         <ul>
           <li>
-            <a href=" ">Proyectos</a>
+            <Link to="/projects">Proyectos</Link>
           </li>
           <li>
-            <a href=" ">Contribuidores</a>
+            <Link to="/contributions">Contribuidores</Link>
           </li>
           <li>
-            <a href=" ">Regístrate</a>
+            <Link to="/">Regístrate</Link>
           </li>
         </ul>
       </div>
       <div className="footer__rights">
-        <span>All Right Reserve</span>
+        <span>All rights reserved</span>
       </div>
       <div className="footer__icons">
         <div className="footer__icons-social">
