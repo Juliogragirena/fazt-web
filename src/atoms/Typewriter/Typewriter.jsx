@@ -21,7 +21,7 @@ export const Typewritter = (props) => {
     if (count === texts.length) {
       count = 0;
     }
-    currentText = texts[count];
+    currentText = typeof texts[count] === 'string' ? texts[count] : ' ';
     if (!deleteTxt) {
       letter = currentText.slice(0, ++index);
     } else {
@@ -35,7 +35,7 @@ export const Typewritter = (props) => {
     if (deleteTxt) {
       time /= 1.2;
     }
-    if (letter.length === 1) {
+    if (letter.length === 0) {
       time = writing;
       deleteTxt = false;
       count++;
