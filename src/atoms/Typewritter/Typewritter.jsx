@@ -1,7 +1,7 @@
 /* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
 
 import React from 'react';
-import './Typewritter.scss'
+import './Typewritter.scss';
 
 export const Typewritter = (props) => {
   const { texts } = props;
