@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ReactComponent as Arrow } from '@assets/images/icons/web/arrow.svg';
+import { ReactComponent as arrowup } from '@assets/images/icons/web/arrowup.svg';
 import { ReactComponent as Close } from '@assets/images/icons/web/close.svg';
 import { ReactComponent as Config } from '@assets/images/icons/web/config.svg';
 import { ReactComponent as Facebook } from '@assets/images/icons/web/facebook.svg';
@@ -123,6 +124,7 @@ import { ReactComponent as zend } from '@assets/images/icons/code/zend.svg';
 function IconWeb({ name, height, width }) {
   const IconList = [
     { name: 'arrow', icon: Arrow },
+    { name: 'arrowup', icon: arrowup },
     { name: 'close', icon: Close },
     { name: 'config', icon: Config },
     { name: 'facebook', icon: Facebook },
