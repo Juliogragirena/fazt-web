@@ -1,0 +1,53 @@
+// Copyright 2020 Fazt Community ~ All rights reserved. MIT license.
+
+@import '../../assets/scss/fonts.scss';
+
+$highlight-color:#FF0039;
+$text-color: #333333;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 650px;
+    margin: 2rem 0;
+    text-align: center;
+
+    &__title {
+        font-family: 'OpenSans', sans-serif;
+        font-size: 35px;
+        line-height: 54px;
+        text-align: center;
+        color: $text-color;
+    }
+
+    &__subtitle {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        margin: 20px 0 40px 0;
+        color: $text-color;
+        padding: 0 60px;
+    }
+
+    &__highlight {
+        color: $highlight-color;
+        font-weight: bold;
+    }
+
+    .primary,
+    .outline {
+        margin-top: 20px;
+    }
+
+}
+
+.container-social {
+    display: flex;
+    justify-content: space-evenly;
+}
