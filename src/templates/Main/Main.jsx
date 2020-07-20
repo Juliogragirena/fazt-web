@@ -6,7 +6,7 @@ import Navigation from '@organism/Navigation/index';
 function Main() {
   return (
     <div>
-      <Navigation></Navigation>
+      <Navigation type="light"></Navigation>
       Landing Page
     </div>
   );
