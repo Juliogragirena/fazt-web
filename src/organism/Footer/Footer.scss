@@ -55,9 +55,11 @@
     }
 
     &-others {
-      border: 1px solid black;
-      transform: rotate(180deg);
-      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(46deg) brightness(100%) contrast(103%);
+      border: 1.5px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
     }
   }
 }

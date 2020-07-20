@@ -35,7 +35,7 @@ export default () => {
           </div>
         </div>
         <div className="footer__icons-others">
-          <IconWeb name="arrow" height="25px" width="25px" />
+          <IconWeb name="arrowup" height="25px" width="25px" />
         </div>
       </div>
     </div>
