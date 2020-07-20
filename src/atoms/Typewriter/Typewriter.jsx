@@ -1,10 +1,12 @@
 /* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
 
-import React from 'react';
-import './Typewritter.scss';
+import React, { useEffect, useState } from 'react';
+import './Typewriter.scss';
 
-export const Typewritter = (props) => {
-  const { texts } = props;
+const Typewritter = ({ texts }) => {
+  const [mounted, setMounted] = useState(false);
+  const [typing, setTyping] = useState('');
+
   let count = 0;
   let index = 0;
   let currentText = '';
@@ -13,9 +15,13 @@ export const Typewritter = (props) => {
   let time = 200;
   let writing = 200;
 
-  document.addEventListener('DOMContentLoaded', () => {
-    type();
-  });
+  useEffect(() => {
+    if (mounted) {
+      type();
+    } else {
+      setMounted(true);
+    }
+  }, [mounted]);
 
   const type = () => {
     if (count === texts.length) {
@@ -27,7 +33,7 @@ export const Typewritter = (props) => {
     } else {
       letter = currentText.slice(index.length, --index);
     }
-    document.querySelector('.typing').textContent = letter;
+    setTyping(letter);
 
     if (letter.length === currentText.length) {
       deleteTxt = true;
@@ -45,7 +51,7 @@ export const Typewritter = (props) => {
 
   return (
     <>
-      <p className="typing"></p>
+      <p className="typing">{typing}</p>
     </>
   );
 };
@@ -53,3 +59,5 @@ export const Typewritter = (props) => {
 Typewritter.defaultProps = {
   text: 'Coloca un texto'
 };
+
+export default Typewritter;
