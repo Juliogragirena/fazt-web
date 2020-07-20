@@ -21,6 +21,7 @@ const Typewritter = ({ texts }) => {
     } else {
       setMounted(true);
     }
+    // eslint-disable-next-line
   }, [mounted]);
 
   const type = () => {
