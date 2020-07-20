@@ -1,5 +1,23 @@
 /* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
 
-.typing{
-    font-family: 'Roboto';
+.typing {
+  font-family: 'Roboto';
+}
+
+.typing::after {
+  top: 0;
+  content: '';
+  width: 1px;
+  height: 35px;
+  border-right: 2px solid black;
+  animation: parpadeo 0.5s infinite ease;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
