@@ -1,1 +1,65 @@
 // Copyright 2020 Fazt Community ~ All rights reserved. MIT license.
+@import '@assets/scss/variables';
+@import '@assets/scss/fonts.scss';
+
+.footer {
+  background: $secondary-color;
+  font-family: 'OpenSansRegular';
+  font-size: 16px;
+  color: $text-primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70px;
+
+  &__links {
+    width: 33%;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-primary-color;
+    }
+  }
+
+  &__rights {
+    span {
+      text-align: center;
+    }
+  }
+
+  &__icons {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-social {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      &-github {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(46deg) brightness(100%) contrast(103%);
+      }
+    }
+
+    &-others {
+      border: 1.5px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
+    }
+  }
+}
