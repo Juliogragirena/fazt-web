@@ -15,18 +15,6 @@ function Hero() {
 
   return (
     <>
-      <CSSTransition
-        in={!inView && containerDown}
-        unmountOnExit
-        classNames="fade"
-        timeout={300}
-        onExited={() => {
-          setcontainerDown(false);
-          setcontainerUp(true);
-        }}
-      >
-        <Navegation />
-      </CSSTransition>
       <div
         ref={ref}
         className="hero"
@@ -80,6 +68,7 @@ function Hero() {
         >
           {
             <div className="hero_container-down">
+              <Navegation />
               <div className="welcome">
                 <h3>Bienvenido a Fazt tech community</h3>
                 <p>

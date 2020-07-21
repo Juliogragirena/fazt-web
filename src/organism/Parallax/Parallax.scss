@@ -28,7 +28,8 @@
   }
 
 }
-.pruebaContainer{
+
+.pruebaContainer {
   margin-top: 5%;
   width: 100%;
   display: flex;
@@ -38,11 +39,12 @@
   justify-items: center;
   justify-content: center;
 }
+
 .prueba {
   height: 200px;
   width: 90%;
   background-color: red;
-  border: solid 2px ;
+  border: solid 2px;
 }
 
 .prueba2 {
@@ -59,23 +61,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50rem;
-  margin-bottom: 8rem;
+  width: 50%;
+  height: 50%;
 }
 
 .hero_container-up {
+  opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   width: 100%;
 }
+
 .hero_container-down {
+  display: flex;
+  height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 @keyframes boing {
