@@ -44,6 +44,7 @@ function () {
 ## Icons Web
 
 - arrow
+- arrowup
 - close
 - config
 - facebook

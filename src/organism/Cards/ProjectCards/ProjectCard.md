@@ -4,7 +4,7 @@ This component is used to display the project informations that comes from the A
 
 ## Props
 
-[id](#1-id),[projectName](#2-projectName), [imageUrl](#3-imageUrl),[favAmount](#4-fav-amount), [size](#5-size)
+[id](#1-id),[projectName](#2-projectName), [imageUrl](#3-imageUrl),[favAmount](#4-fav-amount), [iconWidth](#5-width) [iconHeight](#6-height), [projectColor](#7-projectColor)
 
 #### 1. id
 
@@ -22,20 +22,25 @@ image of the project itself to be used as background on the project card
 
 Amount of likes
 
-#### 5. size
+#### 5. iconWidth
 
-This prop receives the size of the icon
-| Class | Size |
-| :----: | :----: |
-| fa-xs | .75em |
-| fa-sm | .875em |
-| fa-lg | 1.33em |
-| fa-2x | 2em |
-| fa-3x | 3em |
-| fa-4x | 4em |
-| fa-5x | 5em |
-| fa-6x | 6em |
-| fa-7x | 7em |
-| fa-8x | 8em |
-| fa-9x | 9em |
-| fa-10x | 10em |
+This prop receives the width desired of the icon
+
+### 6. iconHeight
+
+This props receibes the height desired of the icon
+
+### 7. projectColor
+
+this prop receives the background color depending on the project category
+
+### Example of component:
+
+```html
+<ProjectCard
+  iconWidth="16"
+  iconHeight="16"
+  imageUrl="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+  projectColor="orange"
+/>
+```

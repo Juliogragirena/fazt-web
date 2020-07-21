@@ -4,7 +4,7 @@ import React from 'react';
 import './Button.scss';
 import { IconWeb } from 'atoms/Icon';
 
-const Button = ({ text, type, src, name, classes, size }) => {
+export const Button = ({ text, type, src, name, classes, size }) => {
   return (
     <div className={type}>
       {(name || src) && <IconWeb src={src} name={name} size={size} classes={classes} />}
@@ -12,5 +12,3 @@ const Button = ({ text, type, src, name, classes, size }) => {
     </div>
   );
 };
-
-export default Button;
