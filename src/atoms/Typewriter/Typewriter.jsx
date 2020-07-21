@@ -1,11 +1,12 @@
 /* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Typewriter.scss';
 
 const Typewritter = ({ texts }) => {
-  const [mounted, setMounted] = useState(false);
   const [typing, setTyping] = useState('');
+
+  const refTime = useRef(null);
 
   let count = 0;
   let index = 0;
@@ -16,13 +17,12 @@ const Typewritter = ({ texts }) => {
   let writing = 200;
 
   useEffect(() => {
-    if (mounted) {
-      type();
-    } else {
-      setMounted(true);
-    }
+    type();
+    return () => {
+      refTime && clearTimeout(refTime);
+    };
     // eslint-disable-next-line
-  }, [mounted]);
+  }, []);
 
   const type = () => {
     if (count === texts.length) {
@@ -47,7 +47,7 @@ const Typewritter = ({ texts }) => {
       deleteTxt = false;
       count++;
     }
-    setTimeout(type, time);
+    refTime.current = setTimeout(type, time);
   };
 
   return (
