@@ -1,12 +1,13 @@
 .project {
   background-color: red;
   overflow: hidden;
-  max-width: 225px;
-  height: 270px;
+  max-width: 230px;
+  height: 300px;
   border-radius: 10px;
   text-align: center;
   .main-info-project {
-    height: 80%;
+    height: 83%;
+    background-size: cover;
   }
   .project--items {
     height: 100%;
@@ -18,23 +19,30 @@
 .project-content {
   background-color: white;
   margin-bottom: 0.5rem;
-  padding: 0.3rem 1rem;
+  width: 85px;
+  height: 35px;
   border-radius: 10px;
 }
 .project--fav {
+  font-family: 'RobotoMedium';
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .project--tech {
-  margin-right: 0.5rem;
-  &:last-child {
-    margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--item {
+    display: flex;
+    margin-right: 0.5rem;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 .project--name {
   padding: 1rem;
-  background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
