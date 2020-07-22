@@ -2,13 +2,7 @@
 
 import React from 'react';
 import './Button.scss';
-import { IconWeb } from 'atoms/Icon';
 
-export const Button = ({ text, type, src, name, classes, size }) => {
-  return (
-    <div className={type}>
-      {(name || src) && <IconWeb src={src} name={name} size={size} classes={classes} />}
-      <span>{text}</span>
-    </div>
-  );
+export const Button = ({ children, type }) => {
+  return <div className={type}>{children}</div>;
 };
