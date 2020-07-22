@@ -1,0 +1,30 @@
+@import './queries.scss';
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+@mixin fontSize($size) {
+  font-size: rem($size);
+}
+@mixin responsiveQuery($size) {
+  @if map-has-key($queries, $size) {
+    @media screen and (min-width: map-get($queries, $size)) {
+      @content;
+    }
+  } @else if type-of($size) == number and unit($size) == 'px' {
+    @media screen and (min-width: $size) {
+      @content;
+    }
+  } @else if type-of($size) == number and unit($size) == 'em' {
+    @media screen and (min-width: $size) {
+      @content;
+    }
+  }
+}
+
+@mixin safaryLargeScreen() {
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+    @include responsiveQuery(1600px) {
+      @content;
+    }
+  }
+}

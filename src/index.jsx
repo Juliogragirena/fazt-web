@@ -8,6 +8,7 @@ import '@assets/scss/main.scss';
 import '@assets/scss/fonts.scss';
 import '@assets/scss/variables.scss';
 import '@assets/scss/icons.scss';
+import '@assets/scss/normalize.scss';
 ReactDOM.render(
   <React.StrictMode>
     <App />
