@@ -1,1 +1,208 @@
 // Copyright 2020 Fazt Community ~ All rights reserved. MIT license.
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/variables.scss';
+
+/*---NAVS----*/
+.navigation--container {
+  @include responsiveQuery(minimum) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3 ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba($color: $secondary-color, $alpha: 0.1);
+    z-index: 1000;
+    background: white;
+  }
+  @include responsiveQuery(large) {
+    height: 6rem;
+  }
+  p {
+    @include responsiveQuery(minimum) {
+      font-size: 1.2rem;
+      font-family: 'RobotoBold';
+      color: $black-color;
+    }
+    @include responsiveQuery(large) {
+      display: none;
+    }
+  }
+}
+.navigation--logo,
+.navigation--menu--items {
+  @include responsiveQuery(minimum) {
+    margin: 1rem;
+  }
+  @include responsiveQuery(large) {
+    margin: 0;
+  }
+}
+.navigation--items--buttton {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.navigation--menu--items {
+  @include responsiveQuery(large) {
+    margin-left: 9.875rem;
+    margin-right: 9.875rem;
+  }
+  @include responsiveQuery(medium) {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+.navigation--logo {
+  width: rem(51px);
+  height: rem(51px);
+  cursor: pointer;
+  @include responsiveQuery(large) {
+    margin-left: 9.875rem;
+  }
+}
+.navigation--items--img {
+  @include responsiveQuery(large) {
+    display: none;
+  }
+}
+.navigation--items--right {
+  @include responsiveQuery(minimum) {
+    position: relative;
+  }
+  @include responsiveQuery(large) {
+    display: flex;
+  }
+  .menu--item {
+    @include responsiveQuery(minimum) {
+      color: $textprimary-color;
+      margin-top: 2rem;
+    }
+    @include responsiveQuery(large) {
+      margin-right: 2rem;
+    }
+  }
+}
+.navigation--items-left {
+  @include responsiveQuery(large) {
+    display: flex;
+  }
+}
+.navigation-items-container {
+  @include responsiveQuery(minimum) {
+    background: #1a1a1a;
+    position: absolute;
+    top: 4.9rem;
+    right: 0;
+    width: 15rem;
+    min-height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+  }
+  @include responsiveQuery(large) {
+    transform: translateX(0%);
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+    background: none;
+    min-height: auto;
+    top: 0;
+    padding-left: 0;
+    margin-right: 9.875rem;
+  }
+  .navigation--button {
+    transition: all 0.3s;
+    @include responsiveQuery(minimum) {
+      margin-top: 2rem;
+      padding: 1.125em 0.8125em;
+      border-radius: rem(10px);
+      border: 0;
+      font-size: 1rem;
+    }
+    @include responsiveQuery(large) {
+      margin-top: 0;
+    }
+  }
+  .navigation--button-ghost {
+    font-family: 'Roboto';
+    &:hover {
+      background-color: #2a2a2a;
+      color: $textprimary-color;
+    }
+    @include responsiveQuery(minimum) {
+      background: none;
+      color: white;
+      font-weight: bold;
+      padding: 0;
+      cursor: pointer;
+    }
+    @include responsiveQuery(large) {
+      border: 1px solid lighten($color: #2a2a2a, $amount: 40);
+      padding: 0.9em 1.5rem;
+      border-radius: rem(10px);
+      margin-right: 2rem;
+      color: #2a2a2a;
+      font-weight: 300;
+    }
+  }
+  .navigation--button--cta {
+    font-family: 'RobotoBold';
+    color: $textprimary-color;
+    background-color: #f62957;
+    &:hover {
+      background-color: #d40936;
+    }
+    @include responsiveQuery(minimum) {
+      order: -1;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    @include responsiveQuery(large) {
+      order: 0;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+    }
+  }
+}
+.menu--container--left {
+  @include responsiveQuery(minimum) {
+    display: none;
+  }
+  @include responsiveQuery(large) {
+    height: 100%;
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+  }
+  .menu--item {
+    color: #716e6e;
+    margin-right: 2rem;
+    &:hover {
+      color: #f62957;
+      cursor: pointer;
+    }
+  }
+}
+.menu--container--right {
+  @include responsiveQuery(minimum) {
+    margin-top: 2rem;
+  }
+  @include responsiveQuery(large) {
+    display: none;
+  }
+}
+/*Hide and SHOw mobile menu*/
+.show {
+  transform: translateX(0%);
+}
+.hide {
+  transform: translateX(100%);
+  @include responsiveQuery(large) {
+    transform: translateX(0%);
+  }
+}
