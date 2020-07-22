@@ -48,6 +48,7 @@ function () {
 - close
 - config
 - facebook
+- faztcommunity
 - faztlogo
 - git
 - github
@@ -57,6 +58,7 @@ function () {
 - instagram
 - link
 - linkedin
+- menuicon
 - twitter
 - discord
 
