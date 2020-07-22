@@ -2,22 +2,15 @@
 
 import React from 'react';
 import { IconWeb } from '@atoms/Icon';
-import { Link } from 'react-router-dom';
 
 export default () => {
   return (
     <div className="footer">
       <div className="footer__links">
         <ul>
-          <li>
-            <Link to="/projects">Proyectos</Link>
-          </li>
-          <li>
-            <Link to="/contributions">Contribuidores</Link>
-          </li>
-          <li>
-            <Link to="/">Regístrate</Link>
-          </li>
+          <li>Proyectos</li>
+          <li>Contribuidores</li>
+          <li>Regístrate</li>
         </ul>
       </div>
       <div className="footer__rights">
