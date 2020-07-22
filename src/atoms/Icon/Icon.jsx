@@ -2,10 +2,19 @@
 import { IconListWeb, IconListCode } from '@assets/lib/LoadIcons';
 import React from 'react';
 
-function IconWeb({ name, height, width }) {
+function IconWeb({ name, height, width, theme }) {
   const findIcon = IconListWeb.find((e) => e.name === name);
-
-  return <>{findIcon ? <findIcon.icon height={height} width={width} /> : <></>}</>;
+  return (
+    <>
+      {findIcon ? (
+        <div className={`icon${theme}`}>
+          <findIcon.icon height={height} width={width} />{' '}
+        </div>
+      ) : (
+        <></>
+      )}
+    </>
+  );
 }
 
 function IconCode({ name, height, width }) {
