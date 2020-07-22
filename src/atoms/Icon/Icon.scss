@@ -1,1 +1,37 @@
 // Copyright 2020 Fazt Community ~ All rights reserved. MIT license.
+@import '../../assets/scss/variables.scss';
+
+.icondark {
+    svg {
+        .pcolor {
+            fill: $iconP-colorDark;
+        }
+        .scolor {
+            fill: $iconS-colorDark;
+        }
+        .tcolor {
+            fill: $iconT-colorDark;
+        }
+        .xcolor {
+            fill: $iconX-colorDark;
+        }
+    }
+}
+
+
+.iconlight {
+    svg {
+        .pcolor {
+            fill: $iconP-colorLight;
+        }
+        .scolor {
+            fill: $iconS-colorLight;
+        }
+        .tcolor {
+            fill: $iconT-colorLight;
+        }
+        .xcolor {
+            fill: $iconX-colorLight;
+        }
+    }
+}

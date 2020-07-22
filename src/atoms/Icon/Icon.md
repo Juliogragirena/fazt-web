@@ -11,7 +11,7 @@ and
 1. name
 2. height
 3. width
-4. theme ( _Not Implemented Yet_ )
+4. theme
 
 ## Types
 
