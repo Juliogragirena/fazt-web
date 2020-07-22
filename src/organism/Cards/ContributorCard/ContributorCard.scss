@@ -1,0 +1,109 @@
+/* Copyright 2020 Fazt Community ~ All rights reserved. MIT license. */
+
+.contributor {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 22.5rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 14.375rem;
+    height: 14.375rem;
+    border-radius: 1.25rem;
+    transition: all 0.9s;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      height: 22.5rem;
+    }
+
+    &:hover > .contributor__backgroundImage {
+      height: 22.5rem;
+    }
+    &:hover > .contributor__noImage {
+      height: 22.5rem;
+    }
+    &:hover > .contributor__name {
+      display: block;
+      animation: appear 0.4s ease-out;
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  &__backgroundImage {
+    border-radius: 1.25rem;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    width: 16.25rem;
+    height: 16.25rem;
+    transition: all 0.5s;
+    transform: scale(1.03);
+  }
+
+  &__blur {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #29292952;
+    backdrop-filter: blur(3.5px);
+  }
+
+  &__img {
+    margin: 1rem auto;
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 3px solid #fff;
+    border-radius: 6.25rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12.5rem;
+    }
+  }
+
+  &__noImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), #eb013d;
+    border-radius: 1.25rem;
+    transition: all 0.5s;
+  }
+
+  &__name {
+    display: none;
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    & span {
+      font-size: 1.6875rem;
+    }
+  }
+
+  &__charge {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
