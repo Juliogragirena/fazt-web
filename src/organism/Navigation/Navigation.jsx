@@ -5,7 +5,6 @@ import React from 'react';
 
 function Navigation() {
   const [show, setShow] = React.useState(true);
-  console.log(show);
   return (
     <header className="navigation--container">
       <div className="navigation--items-left">
@@ -20,7 +19,7 @@ function Navigation() {
       <p>Fazt Community</p>
       <div className="navigation--items--right">
         <nav className="navigation--menu--items">
-          <button tabindex="0" className="navigation--items--buttton" onClick={() => setShow(!show)}>
+          <button tabIndex="0" className="navigation--items--buttton" onClick={() => setShow(!show)}>
             <img src={menuLogo} alt="" className="navigation--items--img" />
           </button>
         </nav>

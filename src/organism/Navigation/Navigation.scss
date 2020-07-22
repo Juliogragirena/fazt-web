@@ -43,6 +43,9 @@
   background: transparent;
   border: 0;
   cursor: pointer;
+  @include responsiveQuery(large) {
+    display: none;
+  }
 }
 .navigation--menu--items {
   @include responsiveQuery(large) {
@@ -118,8 +121,8 @@
   .navigation--button {
     transition: all 0.3s;
     @include responsiveQuery(minimum) {
+      padding: 0.8125rem 1.125rem;
       margin-top: 2rem;
-      padding: 1.125em 0.8125em;
       border-radius: rem(10px);
       border: 0;
       font-size: 1rem;
@@ -143,7 +146,7 @@
     }
     @include responsiveQuery(large) {
       border: 1px solid lighten($color: #2a2a2a, $amount: 40);
-      padding: 0.9em 1.5rem;
+      padding: 0.8125rem 1.125rem;
       border-radius: rem(10px);
       margin-right: 2rem;
       color: #2a2a2a;
@@ -159,8 +162,8 @@
     }
     @include responsiveQuery(minimum) {
       order: -1;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      // padding-left: 1.5rem;
+      // padding-right: 1.5rem;
     }
     @include responsiveQuery(large) {
       order: 0;

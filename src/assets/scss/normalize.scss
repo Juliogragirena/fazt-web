@@ -12,10 +12,7 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-html,
-body {
-  overflow-x: hidden;
-}
+
 /* Sections
      ========================================================================== */
 
@@ -29,10 +26,10 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 5.45rem;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 5rem;
 }
 
 /**
