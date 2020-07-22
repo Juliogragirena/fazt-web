@@ -1,11 +1,13 @@
 {
   "name": "fazt-web",
   "version": "0.1.0",
+  "homepage": "https://faztcommunity.github.io/fazt-web",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-intersection-observer": "^8.26.2",
@@ -20,7 +22,9 @@
     "start": "cross-env SKIP_PREFLIGHT_CHECK=true react-app-rewired start",
     "test": "cross-env SKIP_PREFLIGHT_CHECK=true react-app-rewired test",
     "lint": "eslint ./src/**/*.{js,jsx}",
-    "lint:fix": "eslint --fix --ext .js,.jsx ."
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
