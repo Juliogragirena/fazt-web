@@ -1,3 +1,5 @@
+@import '@assets/scss/variables';
+
 .hero {
   height: 100vh;
   width: 100%;
@@ -5,10 +7,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
+  background: linear-gradient(119.36deg, #ff0039 0%, #c00044 0.01%, #81004f 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $textprimary-color;
   &_buttons {
     align-self: flex-end;
     display: flex;
+    .outline {
+      border-color: $textprimary-color;
+      margin: 2rem 2rem 0 0;
+      span {
+        color: $textprimary-color;
+        margin-left: 0.4rem;
+      }
+    }
   }
 
   &_welcome {
@@ -18,6 +32,17 @@
     align-items: center;
     width: 100%;
     height: 80%;
+
+    h1 {
+      font-family: OpenSansExtraBold;
+      font-size: 4.5rem;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-family: RobotoBold;
+      font-size: 3rem;
+      margin-top: 0;
+    }
   }
 
   &_arrow {
@@ -26,34 +51,17 @@
     animation: 2s infinite boing;
     padding-bottom: 2rem;
   }
-
-}
-
-.pruebaContainer {
-  margin-top: 5%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-}
-
-.prueba {
-  height: 200px;
-  width: 90%;
-  background-color: red;
-  border: solid 2px;
-}
-
-.prueba2 {
-  display: flex;
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  z-index: 3;
-  background-color: green;
+  y
+  &_container-down {
+    h3 {
+      font-family: OpenSansBold;
+      font-size: 2rem;
+    }
+    p {
+      font-family: Roboto;
+      text-align: center;
+    }
+  }
 }
 
 .welcome {
@@ -82,7 +90,6 @@
   margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
-
 }
 
 @keyframes boing {
@@ -126,7 +133,7 @@
 
 .fade-enter-active {
   opacity: 1;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .fade-exit {
@@ -135,5 +142,48 @@
 
 .fade-exit-active {
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
+}
+
+.css-selector {
+  background: linear-gradient(333deg, #ff0039, #81004f);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 34s ease infinite;
+  -moz-animation: AnimationName 34s ease infinite;
+  animation: AnimationName 34s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
