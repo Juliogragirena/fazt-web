@@ -3,6 +3,7 @@ import { ReactComponent as arrowup } from '@assets/images/icons/web/arrowup.svg'
 import { ReactComponent as close } from '@assets/images/icons/web/close.svg';
 import { ReactComponent as config } from '@assets/images/icons/web/config.svg';
 import { ReactComponent as facebook } from '@assets/images/icons/web/facebook.svg';
+import { ReactComponent as faztcommunity } from '@assets/images/icons/web/faztcommunity.svg';
 import { ReactComponent as faztlogo } from '@assets/images/icons/web/faztlogo.svg';
 import { ReactComponent as git } from '@assets/images/icons/web/git.svg';
 import { ReactComponent as github } from '@assets/images/icons/web/github.svg';
@@ -12,6 +13,7 @@ import { ReactComponent as heart } from '@assets/images/icons/web/heart.svg';
 import { ReactComponent as instagram } from '@assets/images/icons/web/instagram.svg';
 import { ReactComponent as link } from '@assets/images/icons/web/link.svg';
 import { ReactComponent as linkedin } from '@assets/images/icons/web/linkedin.svg';
+import { ReactComponent as menuicon } from '@assets/images/icons/web/menuicon.svg';
 import { ReactComponent as twitter } from '@assets/images/icons/web/twitter.svg';
 import { ReactComponent as discord } from '@assets/images/icons/web/discord.svg';
 
@@ -125,6 +127,7 @@ const IconListWeb = [
   { name: 'close', icon: close },
   { name: 'config', icon: config },
   { name: 'facebook', icon: facebook },
+  { name: 'faztcommunity', icon: faztcommunity },
   { name: 'faztlogo', icon: faztlogo },
   { name: 'git', icon: git },
   { name: 'github', icon: github },
@@ -134,6 +137,7 @@ const IconListWeb = [
   { name: 'instagram', icon: instagram },
   { name: 'link', icon: link },
   { name: 'linkedin', icon: linkedin },
+  { name: 'menuicon', icon: menuicon },
   { name: 'twitter', icon: twitter },
   { name: 'discord', icon: discord }
 ];
