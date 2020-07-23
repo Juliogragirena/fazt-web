@@ -24,9 +24,9 @@ function Main() {
         <div className="Contributors">
           <ContributorCard
             skills={{ skill1: 'css3', skill2: 'html5', skill3: 'javascript' }}
-            name="La azaña"
+            name="Axel"
             charge="Frontend"
-            image="https://images-ext-1.discordapp.net/external/9nfLNo9t4BgJhWU3VmT0gDnDHfUqVa2NpkqDkvWqzeY/https/i.gifer.com/3ZWo.gif"
+            image="https://cdn.discordapp.com/attachments/734160697075695636/735666606104903744/IMG_20200722_200631.png"
           />
           <ContributorCard
             skills={{ skill1: 'react', skill2: 'docker', skill3: 'nodejs' }}
@@ -36,15 +36,15 @@ function Main() {
           />
           <ContributorCard
             skills={{ skill1: 'php', skill2: 'java', skill3: 'nodejs' }}
-            name="DonBigotes"
-            charge="backend"
-            image="https://images-ext-2.discordapp.net/external/tWRnfAUlOqlIbKH6ggqzdYWqsv2TmNmR5aovy5b8t58/%3Fixlib%3Drb-1.2.1%26ixid%3DeyJhcHBfaWQiOjEyMDd9%26auto%3Dformat%26fit%3Dcrop%26w%3D500%26q%3D60/https/images.unsplash.com/photo-1593789382576-54f489574d26"
+            name="Alex"
+            charge="FullStack"
+            image="https://cdn.discordapp.com/attachments/734160697075695636/735666599968768051/IMG_-2imdqa.jpg"
           />
           <ContributorCard
             skills={{ skill1: 'react', skill2: 'redux', skill3: 'nodejs' }}
-            name="MiaN4"
+            name="Jenny Winternswitch"
             charge="FullStack"
-            image="https://images-ext-2.discordapp.net/external/Njoy0rajYjATc6LBR9nWHm9noJQZQGqDp3jmsI9DpRo/https/mui.today/__export/1588279779766/sites/mui/img/2020/04/30/dt_common_streams_streamserver_cls.jpg_1466020059.jpg?width=586&height=586"
+            image="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           />
         </div>
         <div className="Social">
