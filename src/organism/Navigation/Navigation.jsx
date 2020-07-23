@@ -25,7 +25,7 @@ function Navigation() {
         </nav>
         <div className={`navigation-items-container ${show ? 'show' : 'hide'}`}>
           <button className="navigation--button navigation--button-ghost">Registrarme</button>
-          <button className="navigation--button navigation--button--cta">Inicia Sesión</button>
+          <button className="navigation--button navigation--button--cta">Iniciar Sesión</button>
           <nav>
             <ul className="menu--container--right">
               <li className="menu--item">Proyectos</li>
