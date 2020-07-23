@@ -21,13 +21,13 @@ export default ({
         <div className="project--items">
           <div className="project--tech project-content">
             <div className="project--tech--item">
-              <IconCode name="css3" width={iconWidth} height={iconHeight} />
+              <IconCode name="html5" width={iconWidth} height={iconHeight} />
             </div>
             <div className="project--tech--item">
               <IconCode name="css3" width={iconWidth} height={iconHeight} />
             </div>
             <div className="project--tech--item">
-              <IconCode name="css3" width={iconWidth} height={iconHeight} />
+              <IconCode name="nodejs" width={iconWidth} height={iconHeight} />
             </div>
           </div>
           <div className="project--fav project-content">

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import FaztLogo from '@assets/images/icons/web/faztlogo.svg';
 import Skills from '@molecules/Skills';
 
-const ContributorCard = ({ name, charge, image }) => {
+const ContributorCard = ({ name, charge, image, skills }) => {
   return (
     <div className="contributor__container">
       <div className="contributor__card">
@@ -34,7 +34,7 @@ const ContributorCard = ({ name, charge, image }) => {
           <p className="contributor__charge">{charge}</p>
         </div>
 
-        <Skills skills={{ skill1: 'react', skill2: 'redux', skill3: 'nodejs' }} />
+        <Skills skills={skills} />
       </div>
     </div>
   );

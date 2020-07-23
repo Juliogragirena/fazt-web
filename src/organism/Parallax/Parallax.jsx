@@ -31,14 +31,18 @@ function Hero() {
           {
             <div className="hero_container-up">
               <div className="hero_buttons">
-                <Button type="outline">
-                  <IconWeb name="discord" width="2rem" />
-                  <span>Discord</span>
-                </Button>
-                <Button type="outline">
-                  <IconWeb name="github" width="2rem" />
-                  <span>Github</span>
-                </Button>
+                <a href="https://discord.gg/37PHuNw" rel="noopener noreferrer" target="_blank">
+                  <Button type="outline">
+                    <IconWeb name="discord" width="2rem" />
+                    <span>Discord</span>
+                  </Button>
+                </a>
+                <a href="https://github.com/faztcommunity" rel="noopener noreferrer" target="_blank">
+                  <Button type="outline">
+                    <IconWeb name="github" width="2rem" />
+                    <span>Github</span>
+                  </Button>
+                </a>
               </div>
               <div className="hero_welcome">
                 <h1>FAZT TECH</h1>

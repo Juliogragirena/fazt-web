@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { IconCode } from '@atoms/Icon/';
 import { usePalette } from 'react-palette';
+import notfoundimg from '@assets/images/notfoundimg.jpg';
 import notfound from '@assets/images/icons/code/notfound.svg';
 import heart from '@assets/images/icons/web/heart.svg';
 const CardProject = ({ id, nameProject, imageUrl, arrayProjects, favAmount, size }) => {
@@ -54,9 +55,7 @@ const CardProject = ({ id, nameProject, imageUrl, arrayProjects, favAmount, size
               <div className="projectCard__container__upSide__containerBar__icons">
                 {arrayProjects.slice(0, 3).map((item, i) => (
                   /*for now the items do not redirect missing add the routes*/
-                  <>
-                    <IconCode name="notfound" height="100%" />
-                  </>
+                  <IconCode key={`${item._id}${i}keyICON`} name="notfound" height="100%" />
                 ))}
               </div>
 
@@ -117,19 +116,22 @@ CardProject.propTypes = {
 CardProject.defaultProps = {
   id: 0,
   nameProject: 'Missing Project',
-  imageUrl: '',
+  imageUrl: notfoundimg,
   arrayProjects: [
     {
+      id: '0',
       name: 'NotFound',
       url: 'notfound',
       color: '#E04149'
     },
     {
+      id: '1',
       name: 'NotFound',
       url: 'notfound',
       color: '#E04149'
     },
     {
+      id: '2',
       name: 'NotFound',
       url: 'notfound',
       color: '#E04149'

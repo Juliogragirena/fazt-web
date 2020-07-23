@@ -6,7 +6,7 @@ import './Typewriter.scss';
 const Typewritter = ({ texts }) => {
   const [typing, setTyping] = useState('');
 
-  const refTime = useRef(null);
+  const refTime = useRef(true);
 
   let count = 0;
   let index = 0;
@@ -20,11 +20,15 @@ const Typewritter = ({ texts }) => {
     type();
     return () => {
       refTime && clearTimeout(refTime);
+      refTime.current = null;
     };
     // eslint-disable-next-line
   }, []);
 
   const type = () => {
+    if (!refTime.current) {
+      return;
+    }
     if (count === texts.length) {
       count = 0;
     }

@@ -65,10 +65,10 @@ function CardsGrid() {
               className="containerGrid__cardsGrid__primary"
             >
               {Data.slice(0, 1).map((item) => (
-                <CSSTransition key={item._id} timeout={1500} classNames="item">
+                <CSSTransition key={`${item._id}keyCSST1`} timeout={1500} classNames="item">
                   <CardProject
+                    key={`${item._id}keyCSST1CARD`}
                     id={item._id}
-                    key={item._id}
                     nameProject={item.nameProject}
                     imageUrl={item.imageUrl}
                     favAmount={item.favAmount}
@@ -87,10 +87,9 @@ function CardsGrid() {
               className="containerGrid__cardsGrid__secondary"
             >
               {Data.slice(1, 9).map((item) => (
-                <CSSTransition key={item._id} timeout={1500} classNames="item">
+                <CSSTransition key={`${item._id}keyCSST2`} timeout={1500} classNames="item">
                   <CardProject
                     id={item._id}
-                    key={item._id}
                     nameProject={item.nameProject}
                     imageUrl={item.imageUrl}
                     favAmount={item.favAmount}

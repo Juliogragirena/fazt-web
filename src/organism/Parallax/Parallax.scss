@@ -16,6 +16,9 @@
     align-self: flex-end;
     display: flex;
     margin-right: 5.5rem;
+    a{
+      text-decoration: none;
+    }
     .outline {
       border-color: $textprimary-color;
       margin: 2rem 2rem 0 0;
@@ -24,6 +27,7 @@
         margin-left: 0.4rem;
       }
     }
+
   }
 
   &_welcome {
