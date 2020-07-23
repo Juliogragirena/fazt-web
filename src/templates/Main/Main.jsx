@@ -30,9 +30,9 @@ function Main() {
           />
           <ContributorCard
             skills={{ skill1: 'react', skill2: 'docker', skill3: 'nodejs' }}
-            name="Joe Doe"
-            charge="diseño"
-            image="https://images-ext-2.discordapp.net/external/FyjRtTFylRVO7S41MCYPMHBZqX0wPOCN5hYkPUarWXQ/%3Fixlib%3Drb-1.2.1%26ixid%3DeyJhcHBfaWQiOjEyMDd9%26auto%3Dformat%26fit%3Dcrop%26w%3D500%26q%3D60/https/images.unsplash.com/photo-1549068106-b024baf5062d?width=250&height=375"
+            name="Daniel solar"
+            charge="Fullstack"
+            image="https://cdn.discordapp.com/attachments/734160697075695636/735674618840612885/Profile.png"
           />
           <ContributorCard
             skills={{ skill1: 'php', skill2: 'java', skill3: 'nodejs' }}
