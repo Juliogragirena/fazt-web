@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fazt-web/static/css/main.32a5c6eb.chunk.css",
-    "main.js": "/fazt-web/static/js/main.e0b1c916.chunk.js",
-    "main.js.map": "/fazt-web/static/js/main.e0b1c916.chunk.js.map",
+    "main.js": "/fazt-web/static/js/main.d8a037ee.chunk.js",
+    "main.js.map": "/fazt-web/static/js/main.d8a037ee.chunk.js.map",
     "runtime-main.js": "/fazt-web/static/js/runtime-main.2c42768a.js",
     "runtime-main.js.map": "/fazt-web/static/js/runtime-main.2c42768a.js.map",
     "static/js/2.d2ed398b.chunk.js": "/fazt-web/static/js/2.d2ed398b.chunk.js",
     "static/js/2.d2ed398b.chunk.js.map": "/fazt-web/static/js/2.d2ed398b.chunk.js.map",
     "index.html": "/fazt-web/index.html",
-    "precache-manifest.444e70d2c316e7ba7ea0f7dcba6c72e6.js": "/fazt-web/precache-manifest.444e70d2c316e7ba7ea0f7dcba6c72e6.js",
+    "precache-manifest.79a3c908c807a0e78ffc417fff622115.js": "/fazt-web/precache-manifest.79a3c908c807a0e78ffc417fff622115.js",
     "service-worker.js": "/fazt-web/service-worker.js",
     "static/css/main.32a5c6eb.chunk.css.map": "/fazt-web/static/css/main.32a5c6eb.chunk.css.map",
     "static/js/2.d2ed398b.chunk.js.LICENSE.txt": "/fazt-web/static/js/2.d2ed398b.chunk.js.LICENSE.txt",
@@ -143,6 +143,6 @@
     "static/js/runtime-main.2c42768a.js",
     "static/js/2.d2ed398b.chunk.js",
     "static/css/main.32a5c6eb.chunk.css",
-    "static/js/main.e0b1c916.chunk.js"
+    "static/js/main.d8a037ee.chunk.js"
   ]
 }
