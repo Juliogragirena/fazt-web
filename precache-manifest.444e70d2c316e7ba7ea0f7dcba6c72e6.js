@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55f982606ccffe6ddd79482824a892ed",
+    "revision": "49cf39ecc4690e759542f3413be94a62",
     "url": "/fazt-web/index.html"
   },
   {
-    "revision": "5ea121c3e445ce989a7b",
+    "revision": "4210a8678ecc681871ba",
     "url": "/fazt-web/static/css/main.32a5c6eb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fazt-web/static/js/2.d2ed398b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5ea121c3e445ce989a7b",
-    "url": "/fazt-web/static/js/main.59caa69a.chunk.js"
+    "revision": "4210a8678ecc681871ba",
+    "url": "/fazt-web/static/js/main.e0b1c916.chunk.js"
   },
   {
     "revision": "c7f7847534d6567fcd1f",

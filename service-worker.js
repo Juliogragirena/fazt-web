@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fazt-web/precache-manifest.a0532b19f0aab9fdffea768b236d7b4d.js"
+  "/fazt-web/precache-manifest.444e70d2c316e7ba7ea0f7dcba6c72e6.js"
 );
 
 self.addEventListener('message', (event) => {
