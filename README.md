@@ -17,5 +17,6 @@
 - **Aimarandony** [GitHub](https://github.com/nicksiuxs)
 - **ZeR0ByTe** [GitHub](https://github.com/soydiego)
 - **Juank1791** [GitHub](https://github.com/juank1791)
+- **Juliogragirena** [GitHub](https://github.com/Juliogragirena)
 
 ## [License](./LICENSE)
