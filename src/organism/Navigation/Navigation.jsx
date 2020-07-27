@@ -4,7 +4,7 @@ import menuLogo from '../../assets/images/menu-icon.svg';
 import React from 'react';
 
 function Navigation() {
-  const [show, setShow] = React.useState(true);
+  const [show, setShow] = React.useState(false); // esto es para que el menu se aparezca el menu oculto en un principio
   return (
     <header className="navigation--container">
       <div className="navigation--items-left">
